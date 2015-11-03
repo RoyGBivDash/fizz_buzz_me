@@ -2,8 +2,14 @@
 
 def fizz_buzz(number):
     """Return a string representing the number, or 'fizz'/'buzz'/'fizzbuzz'"""
-    # TODO - remove 'pass' and write teh codes
-    pass
+    if (number % 3) == 0 & (number % 2)== 0:
+        print('fizzbuzz')
+    elif (number % 3) == 0:
+        print('fizz')
+    elif (number % 2) == 0:
+        print('buzz')
+    else:
+        print(number)
 
 def main():
     """Print sample output of fizz_buzz function"""
