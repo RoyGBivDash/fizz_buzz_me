@@ -2,14 +2,16 @@
 
 def fizz_buzz(number):
     """Return a string representing the number, or 'fizz'/'buzz'/'fizzbuzz'"""
-    if (number % 3) == 0 & (number % 2)== 0:
-        print('fizzbuzz')
+    if (number % 3) == 0 and (number % 2)== 0:
+        answer = 'fizzbuzz'
     elif (number % 3) == 0:
-        print('fizz')
+        answer = 'fizz'
     elif (number % 2) == 0:
-        print('buzz')
+        answer = 'buzz'
     else:
-        print(number)
+        answer = number
+
+    return(answer)
 
 def main():
     """Print sample output of fizz_buzz function"""
